@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}
+Home | {{ block.super }}
+{% endblock %}
+
+{% block conteudo %}
+
+
+<!-- WELCOME SECTION -->
+    <div class="container">
+      <div class="row mt">
+      	<div class="col-lg-8">
+	        <h1>Escolha o seu curso!</h1>
+	        <p>Centenas de cursos a sua disposição! Faça já o seu cadastro e participe!</p>
+      	</div>
+      	<div class="col-lg-4">
+      		<p class="pull-right"><br><a href="{% url 'cursos' %}"><button type="button" class="btn btn-green">Acesse todos os cursos</button></a></p>
+      	</div>
+      </div><!-- /row -->
+    </div><!-- /.container -->
+
+
+<!-- BLOG POSTS -->
+	<div class="container">
+		<div class="row mt">
+			<div class="col-lg-12">
+				<h1>Cursos Recentes</h1>
+			</div><!-- col-lg-12 -->
+			<div class="col-lg-8">
+				<p>Últimos cursos cadastrados</p>
+			</div><!-- col-lg-8-->
+			<div class="col-lg-4 goright">
+				<p><a href="{% url 'cursos' %}"><i class="fa fa-angle-right"></i> Veja todos os cursos</a></p>
+			</div>
+		</div><!-- row -->
+		
+		<div class="row mt">
+			<div class="col-lg-4">
+				<img class="img-responsive" src="{% static 'assets/img/post01.jpg' %}" alt="">
+				<h3><a href="#">Curso 1</a></h3>
+				<p>Descrição 1.</p>
+				<p><a href="#"><i class="fa fa-link"></i> Inscrição</a></p>
+			</div>
+			<div class="col-lg-4">
+				<img class="img-responsive" src="{% static 'assets/img/post02.jpg' %}" alt="">
+				<h3><a href="#">Curso 2</a></h3>
+				<p>Descrição 2.</p>
+				<p><a href="#"><i class="fa fa-link"></i> Inscrição</a></p>
+			</div>
+			<div class="col-lg-4">
+				<img class="img-responsive" src="{% static 'assets/img/post03.jpg' %}" alt="">
+				<h3><a href="#">Curso 3</a></h3>
+				<p>Descrição 3.</p>
+				<p><a href="#"><i class="fa fa-link"></i> Inscrição</a></p>
+			</div>		
+		</div><!-- row -->
+	</div><!-- container -->
+
+{% endblock %}
+
+
+
+
