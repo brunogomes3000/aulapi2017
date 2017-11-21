@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block titulo %}
 Cursos | {{ block.super }}
@@ -6,7 +7,52 @@ Cursos | {{ block.super }}
 
 {% block conteudo %}
 
-<p>Lista de Cursos aqui</p>
+<h1 class="centered">Lista de Cursos FIC</h1><br />
+
+<div class="container">
+
+<div class="row mt">
+			<div class="col-lg-4">
+				<img class="img-responsive" src="{% static 'assets/img/post01.jpg' %}" alt="">
+				<h3><a href="#">Curso 1</a></h3>
+				<p>Descrição 1.</p>
+				<p><a href="#"><i class="fa fa-link"></i> Saiba mais</a></p><br/>
+			</div>
+			<div class="col-lg-4">
+				<img class="img-responsive" src="{% static 'assets/img/post02.jpg' %}" alt="">
+				<h3><a href="#">Curso 2</a></h3>
+				<p>Descrição 2.</p>
+				<p><a href="#"><i class="fa fa-link"></i> Saiba mais</a></p><br/>
+			</div>
+			<div class="col-lg-4">
+				<img class="img-responsive" src="{% static 'assets/img/post03.jpg' %}" alt="">
+				<h3><a href="#">Curso 3</a></h3>
+				<p>Descrição 3.</p>
+				<p><a href="#"><i class="fa fa-link"></i> Saiba mais</a></p><br/>
+			</div>
+
+			<div class="col-lg-4">
+				<img class="img-responsive" src="{% static 'assets/img/post01.jpg' %}" alt="">
+				<h3><a href="#">Curso 4</a></h3>
+				<p>Descrição 4.</p>
+				<p><a href="#"><i class="fa fa-link"></i> Saiba mais</a></p><br/>
+			</div>
+			<div class="col-lg-4">
+				<img class="img-responsive" src="{% static 'assets/img/post02.jpg' %}" alt="">
+				<h3><a href="#">Curso 5</a></h3>
+				<p>Descrição 5.</p>
+				<p><a href="#"><i class="fa fa-link"></i> Saiba mais</a></p><br/>
+			</div>
+			<div class="col-lg-4">
+				<img class="img-responsive" src="{% static 'assets/img/post03.jpg' %}" alt="">
+				<h3><a href="#">Curso 6</a></h3>
+				<p>Descrição 6.</p>
+				<p><a href="#"><i class="fa fa-link"></i> Saiba mais</a></p><br/>
+			</div>
+			
+		</div>
+	</div>
+
 
 {% endblock %}
 
