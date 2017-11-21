@@ -1,9 +1,11 @@
 from django.contrib import admin
 
-'''
-from .mCursoAdmin(admin.ModelAdmin):
-	list_display = ['nome', 'dataCadastro']
+from .models import Usuario
+from .models import Publico
+from .models import Area
+from .models import Curso
 
-admin.site.register(Instituicao, UsuarioAdmin)
-admin.site.register(Cidade)
-'''
+admin.site.register(Usuario)
+admin.site.register(Publico)
+admin.site.register(Area)
+admin.site.register(Curso)

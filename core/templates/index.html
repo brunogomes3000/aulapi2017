@@ -7,22 +7,19 @@ Home | {{ block.super }}
 
 {% block conteudo %}
 
-
-<!-- WELCOME SECTION -->
     <div class="container">
       <div class="row mt">
       	<div class="col-lg-8">
-	        <h1>Escolha o seu curso!</h1>
-	        <p>Centenas de cursos a sua disposição! Faça já o seu cadastro e participe!</p>
+	        <h1>Cadastre-se!</h1>
+	        <p>Faça já o seu cadastro para oferecer ou se inscrever em um curso!</p>
       	</div>
       	<div class="col-lg-4">
-      		<p class="pull-right"><br><a href="{% url 'cursos' %}"><button type="button" class="btn btn-green">Acesse todos os cursos</button></a></p>
+      		<p class="pull-right"><br><a href="{% url 'cursos' %}"><button type="button" class="btn btn-green">Cadastro</button></a> <a href="{% url 'cursos' %}"><button type="button" class="btn btn-green">Autenticar</button></a></p>  
+      		<p class="pull-right"></p>
       	</div>
-      </div><!-- /row -->
-    </div><!-- /.container -->
+      </div>
+    </div>
 
-
-<!-- BLOG POSTS -->
 	<div class="container">
 		<div class="row mt">
 			<div class="col-lg-12">
@@ -41,25 +38,21 @@ Home | {{ block.super }}
 				<img class="img-responsive" src="{% static 'assets/img/post01.jpg' %}" alt="">
 				<h3><a href="#">Curso 1</a></h3>
 				<p>Descrição 1.</p>
-				<p><a href="#"><i class="fa fa-link"></i> Inscrição</a></p>
+				<p><a href="#"><i class="fa fa-link"></i> Saiba mais</a></p>
 			</div>
 			<div class="col-lg-4">
 				<img class="img-responsive" src="{% static 'assets/img/post02.jpg' %}" alt="">
 				<h3><a href="#">Curso 2</a></h3>
 				<p>Descrição 2.</p>
-				<p><a href="#"><i class="fa fa-link"></i> Inscrição</a></p>
+				<p><a href="#"><i class="fa fa-link"></i> Saiba mais</a></p>
 			</div>
 			<div class="col-lg-4">
 				<img class="img-responsive" src="{% static 'assets/img/post03.jpg' %}" alt="">
 				<h3><a href="#">Curso 3</a></h3>
 				<p>Descrição 3.</p>
-				<p><a href="#"><i class="fa fa-link"></i> Inscrição</a></p>
+				<p><a href="#"><i class="fa fa-link"></i> Saiba mais</a></p>
 			</div>		
-		</div><!-- row -->
-	</div><!-- container -->
+		</div>
+	</div>
 
 {% endblock %}
-
-
-
-
