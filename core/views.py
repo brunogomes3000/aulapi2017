@@ -5,3 +5,5 @@ def index(request):
 
 def cursos(request):
 	return render(request, 'cursos.html')
+
+	
