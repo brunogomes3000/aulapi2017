@@ -49,3 +49,6 @@ class Curso(models.Model):
 	class Meta:
 		verbose_name = 'Curso'
 		verbose_name_plural = 'Cursos'
+
+
+		
